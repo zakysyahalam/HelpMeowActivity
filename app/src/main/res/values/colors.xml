@@ -20,4 +20,9 @@
 	<color name="coklat_muda">#FFF8D6</color>
 	<color name="coklat_tua">#F7E1AE</color>
 
+	<color name="dark_green">#617A55</color>
+	<color name="light_green">#A4D0A4</color>
+	<color name="light_yellow">#FFF8D6</color>
+	<color name="light_orange">#F7E1AE</color>
+
 </resources>

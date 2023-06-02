@@ -1,4 +1,4 @@
-package com.shai.helpmeow
+package com.example.helpmeow
 
 import android.content.Intent
 import android.os.Build
@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import com.example.helpmeow.LoginActivity
 import com.example.helpmeow.databinding.ActivityIntroBinding
 
 class IntroActivity : AppCompatActivity() {

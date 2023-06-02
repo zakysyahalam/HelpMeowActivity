@@ -1,4 +1,4 @@
-package com.shai.helpmeow
+package com.example.helpmeow
 
 class Object {
     companion object {

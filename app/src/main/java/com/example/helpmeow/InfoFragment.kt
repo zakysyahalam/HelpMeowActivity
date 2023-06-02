@@ -1,4 +1,4 @@
-package com.shai.helpmeow
+package com.example.helpmeow
 
 import android.os.Bundle
 import android.view.LayoutInflater

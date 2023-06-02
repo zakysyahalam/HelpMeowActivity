@@ -1,8 +1,9 @@
-package com.shai.helpmeow
+package com.example.helpmeow
 
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
+import com.example.helpmeow.Object
 import com.example.helpmeow.R
 import com.example.helpmeow.databinding.ActivityPostBinding
 

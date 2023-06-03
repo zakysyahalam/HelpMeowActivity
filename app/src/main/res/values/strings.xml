@@ -70,4 +70,6 @@
 	<string name="hello_blank_fragment">Hello blank fragment</string>
 	<string name="post">Post</string>
 	<string name="location">Location</string>
+
+	<string name="samplePostDescription">I lost my cat, anybody saw it? Please contact me, there’ll be a reward. Last seen near Dog Park</string>
 </resources>

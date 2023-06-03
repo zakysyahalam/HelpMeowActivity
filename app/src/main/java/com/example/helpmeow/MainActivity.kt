@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val intent = Intent(this, LoginActivity::class.java)
+        val intent = Intent(this, IntroActivity::class.java)
         startActivity(intent)
         finish() // Optional: Close the MainActivity so it's not in the back stack
     }

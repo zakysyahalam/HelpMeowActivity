@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.ImageView
@@ -19,6 +20,7 @@ class LoginActivity : Activity() {
 
     private lateinit var et_email: EditText
     private lateinit var et_password: EditText
+    private lateinit var google_btn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +28,7 @@ class LoginActivity : Activity() {
 
         et_email = findViewById(R.id.enter_email)
         et_password = findViewById(R.id.enter_password)
+        google_btn = findViewById(R.id.google_btn)
 
 
         val registerTextView: AppCompatTextView = findViewById(R.id.to_register)
@@ -72,6 +75,7 @@ class LoginActivity : Activity() {
                     Toast.makeText(applicationContext, "Login Success", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(applicationContext, "Login Failed", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext, "your id is: " + yourId, Toast.LENGTH_SHORT).show()
                 }
             }
         })

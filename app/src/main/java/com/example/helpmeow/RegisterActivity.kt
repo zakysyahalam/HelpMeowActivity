@@ -26,7 +26,7 @@ class RegisterActivity : Activity() {
 
         val registerTextView: TextView = findViewById(R.id.to_login)
         registerTextView.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }

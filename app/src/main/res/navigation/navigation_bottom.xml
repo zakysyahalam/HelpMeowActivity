@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.shai.helpmeow.HomeFragment"
+        android:name="com.example.helpmeow.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_info"
-        android:name="com.shai.helpmeow.InfoFragment"
+        android:name="com.example.helpmeow.InfoFragment"
         android:label="@string/title_info"
         tools:layout="@layout/fragment_info" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.shai.helpmeow.ProfileFragment"
+        android:name="com.example.helpmeow.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

@@ -75,7 +75,9 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
         app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
@@ -96,13 +98,33 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:id="@+id/imageView3"
+                
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/img_kucing" />
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_kucing" />
+
+                    <TextView
+                        android:id="@+id/catBreed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner_background_tagbreed"
+                        android:paddingLeft="9dp"
+                        android:paddingRight="9dp"
+                        android:text="Anggora"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
             </androidx.cardview.widget.CardView>
 
@@ -113,7 +135,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/rounded_corner_background"
+                android:background="@drawable/rounded_corner_background_tagpost"
                 android:paddingLeft="9dp"
                 android:paddingRight="9dp"
                 android:text="Kiki"
@@ -128,7 +150,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="26dp"
                 android:layout_marginStart="10dp"
-                android:background="@drawable/rounded_corner_background"
+                android:background="@drawable/rounded_corner_background_tagpost"
                 android:drawableEnd="@drawable/img_location"
                 android:drawablePadding="3dp"
                 android:gravity="center_vertical"
@@ -207,8 +229,8 @@
 
             <ImageView
                 android:id="@+id/catAction"
-                android:layout_width="54dp"
-                android:layout_height="48dp"
+                android:layout_width="58dp"
+                android:layout_height="54dp"
                 android:layout_marginTop="16dp"
                 android:background="@android:color/transparent"
                 android:gravity="center"
@@ -222,28 +244,27 @@
                 android:id="@+id/catAction2"
                 android:layout_width="55dp"
                 android:layout_height="53dp"
-                android:layout_marginStart="10dp"
                 android:background="@android:color/transparent"
                 android:gravity="center"
                 android:padding="5dp"
                 android:src="@drawable/img_favorite"
                 android:text=""
                 app:layout_constraintBottom_toBottomOf="@+id/catAction"
-                app:layout_constraintStart_toEndOf="@+id/catAction"
+                app:layout_constraintEnd_toEndOf="@+id/cardView2"
+                app:layout_constraintStart_toStartOf="@+id/cardView2"
                 app:layout_constraintTop_toTopOf="@+id/catAction" />
 
             <ImageView
                 android:id="@+id/catAction3"
                 android:layout_width="86dp"
                 android:layout_height="77dp"
-                android:layout_marginStart="10dp"
                 android:background="@android:color/transparent"
                 android:gravity="center"
                 android:padding="5dp"
                 android:src="@drawable/img_share"
                 android:text=""
                 app:layout_constraintBottom_toBottomOf="@+id/catAction2"
-                app:layout_constraintStart_toEndOf="@+id/catAction2"
+                app:layout_constraintEnd_toEndOf="@+id/cardView2"
                 app:layout_constraintTop_toTopOf="@+id/catAction2" />
 
 

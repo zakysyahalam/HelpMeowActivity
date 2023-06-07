@@ -11,4 +11,12 @@ class LoginResponse {
     @SerializedName("your_id")
     @Expose
     var yourId: String? = null
+
+    @SerializedName("username")
+    @Expose
+    var username: String? = null
+
+    @SerializedName("message")
+    @Expose
+    var message: String? = null
 }

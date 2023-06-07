@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.google.gson.Gson
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -58,16 +59,23 @@ class RegisterActivity : Activity() {
 
             override fun onResponse(call: Call<RegisterResponse>, response: Response<RegisterResponse>) {
                 val user = response.body()
+                val email = user?.email
+                val yourId = user?.yourId
                 val username = user?.username
+
                 if (response.isSuccessful) {
-                    // Handle successful registration
-                    if (username != null) {
-                        Log.e("username", username)
-                    }
-                    Toast.makeText(applicationContext, "Registration Success", Toast.LENGTH_SHORT).show()
+                    val message = response.body()?.message
+                    Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
                 } else {
-                    // Handle registration failure
-                    Toast.makeText(applicationContext, "Registration Failed", Toast.LENGTH_SHORT).show()
+                    val errorBody = response.errorBody()?.string()
+                    val errorMessage = try {
+                        val errorJson = Gson().fromJson(errorBody, ErrorJson::class.java)
+                        errorJson.message ?: "Unknown error"
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                        errorBody ?: "Unknown error"
+                    }
+                    Toast.makeText(applicationContext, errorMessage, Toast.LENGTH_SHORT).show()
                 }
             }
         })

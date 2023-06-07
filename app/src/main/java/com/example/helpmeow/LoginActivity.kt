@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatTextView
+import com.google.gson.Gson
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -62,18 +63,22 @@ class LoginActivity : Activity() {
                 val user = response.body()
                 val email = user?.email
                 val yourId = user?.yourId
+                val username = user?.username
 
                 if (response.isSuccessful) {
-                    if (email != null) {
-                        Log.e("email", email)
-                    }
-                    if (yourId != null) {
-                        Log.e("your_id", yourId)
-                    }
-                    Toast.makeText(applicationContext, "Login Success", Toast.LENGTH_SHORT).show()
+                    val message = response.body()?.message
+                    Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext, "your username: $username", Toast.LENGTH_SHORT).show()
                 } else {
-                    Toast.makeText(applicationContext, "Login Failed", Toast.LENGTH_SHORT).show()
-                    Toast.makeText(applicationContext, "your id is: " + yourId, Toast.LENGTH_SHORT).show()
+                    val errorBody = response.errorBody()?.string()
+                    val errorMessage = try {
+                        val errorJson = Gson().fromJson(errorBody, ErrorJson::class.java)
+                        errorJson.message ?: "Unknown error"
+                    } catch (e: Exception) {
+                        e.printStackTrace()
+                        errorBody ?: "Unknown error"
+                    }
+                    Toast.makeText(applicationContext, errorMessage, Toast.LENGTH_SHORT).show()
                 }
             }
         })

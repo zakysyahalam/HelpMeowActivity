@@ -3,7 +3,6 @@ package com.example.helpmeow
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -53,7 +52,7 @@ class LoginActivity : Activity() {
         request.email = et_email.text.toString().trim()
         request.password = et_password.text.toString().trim()
 
-        val retro = Retro().getRetroClientInstance().create(UserApi::class.java)
+        val retro = Retro().getRetroClientInstance().create(LoginApi::class.java)
         retro.login(request).enqueue(object : Callback<LoginResponse> {
             override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
                 Toast.makeText(applicationContext, "100:Login Failure", Toast.LENGTH_SHORT).show()
@@ -69,6 +68,11 @@ class LoginActivity : Activity() {
                     val message = response.body()?.message
                     Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
                     Toast.makeText(applicationContext, "your username: $username", Toast.LENGTH_SHORT).show()
+
+                    val intent = Intent(this@LoginActivity, HomeActivity::class.java)
+                    startActivity(intent)
+                    finish()
+
                 } else {
                     val errorBody = response.errorBody()?.string()
                     val errorMessage = try {

@@ -3,7 +3,6 @@ package com.example.helpmeow
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -21,7 +20,7 @@ class RegisterActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.actibity_register)
+        setContentView(R.layout.activity_register)
 
         val registerTextView: TextView = findViewById(R.id.to_login)
         registerTextView.setOnClickListener {
@@ -51,7 +50,7 @@ class RegisterActivity : Activity() {
         request.password = et_password_register.text.toString().trim()
         request.username = et_name.text.toString().trim()
 
-        val retro = Retro().getRegisterClientInstance().create(RegisterApi::class.java)
+        val retro = Retro().getRetroClientInstance().create(RegisterApi::class.java)
         retro.register(request).enqueue(object : Callback<RegisterResponse> {
             override fun onFailure(call: Call<RegisterResponse>, t: Throwable) {
                 Toast.makeText(applicationContext, "101:Register Failure", Toast.LENGTH_SHORT).show()
@@ -66,6 +65,10 @@ class RegisterActivity : Activity() {
                 if (response.isSuccessful) {
                     val message = response.body()?.message
                     Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
+
+                    val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
+                    startActivity(intent)
+                    finish()
                 } else {
                     val errorBody = response.errorBody()?.string()
                     val errorMessage = try {

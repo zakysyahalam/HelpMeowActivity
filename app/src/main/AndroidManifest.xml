@@ -46,14 +46,29 @@
 
 		<activity
 			android:name=".SettingsActivity"
-			android:exported="false" />
+			android:exported="true" />
 		<activity
 			android:name=".PostActivity"
-			android:exported="false" />
+			android:exported="true" />
 		<activity
 			android:name=".IntroActivity"
-			android:exported="false" />
+			android:exported="true" />
+		<activity
+			android:name=".HomeActivity"
+			android:exported="true"
+			android:label="Login Page" />
 
-    </application>
+		<activity
+			android:name=".BreedActivity"
+			android:exported="true" />
+		<activity
+			android:name=".FavoriteActivity"
+			android:exported="true" />
+		<activity
+			android:name=".ProfileActivity"
+			android:exported="true" />
+
+
+	</application>
 
 </manifest>

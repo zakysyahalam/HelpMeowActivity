@@ -13,12 +13,5 @@ class Retro {
             .build()
     }
 
-    fun getRegisterClientInstance(): Retrofit {
-        val gson = GsonBuilder().setLenient().create()
-        return Retrofit.Builder()
-            .baseUrl("https://backend-dot-helpmeow.et.r.appspot.com/")
-            .addConverterFactory(GsonConverterFactory.create(gson))
-            .build()
-    }
 
 }

@@ -1,22 +1,19 @@
 package com.example.helpmeow
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.ArrayAdapter
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import com.example.helpmeow.Object
-import com.example.helpmeow.R
-import com.example.helpmeow.databinding.ActivityPostBinding
 
-class PostActivity : AppCompatActivity() {
+class ProfileActivity : AppCompatActivity() {
 
     private val bottomButtons: BottomButtons = BottomButtons()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_post)
+        setContentView(R.layout.activity_profile)
 
         findViewById<ImageButton>(R.id.navigation_home).setOnClickListener(bottomButtons)
         findViewById<ImageButton>(R.id.navigation_breed).setOnClickListener(bottomButtons)
@@ -29,27 +26,27 @@ class PostActivity : AppCompatActivity() {
         override fun onClick(view: View) {
             when (view.id) {
                 R.id.navigation_home -> {
-                    val intent = Intent(this@PostActivity, HomeActivity::class.java)
+                    val intent = Intent(this@ProfileActivity, HomeActivity::class.java)
                     startActivity(intent)
                     finish()
                 }
                 R.id.navigation_breed -> {
-                    val intent = Intent(this@PostActivity, BreedActivity::class.java)
+                    val intent = Intent(this@ProfileActivity, BreedActivity::class.java)
                     startActivity(intent)
                     finish()
                 }
                 R.id.navigation_favorite -> {
-                    val intent = Intent(this@PostActivity, FavoriteActivity::class.java)
+                    val intent = Intent(this@ProfileActivity, FavoriteActivity::class.java)
                     startActivity(intent)
                     finish()
                 }
                 R.id.navigation_profile -> {
-                    val intent = Intent(this@PostActivity, ProfileActivity::class.java)
+                    val intent = Intent(this@ProfileActivity, ProfileActivity::class.java)
                     startActivity(intent)
                     finish()
                 }
                 R.id.navigation_post -> {
-                    val intent = Intent(this@PostActivity, PostActivity::class.java)
+                    val intent = Intent(this@ProfileActivity, PostActivity::class.java)
                     startActivity(intent)
                     finish()
                 }

@@ -35,13 +35,7 @@ android {
         viewBinding true
     }
 
-    // Add this block to enable AndroidX support
-    useLibrary 'androidx.core:core-ktx:1.7.0'
-    testOptions {
-        unitTests {
-            includeAndroidResources true
-        }
-    }
+
 }
 
 dependencies {

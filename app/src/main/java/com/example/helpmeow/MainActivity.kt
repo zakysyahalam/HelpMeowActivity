@@ -22,4 +22,6 @@ class MainActivity : AppCompatActivity() {
         finish() // Optional: Close the MainActivity so it's not in the back stack
     }
 
+    //splash->intro>login/regis>view
+
 }

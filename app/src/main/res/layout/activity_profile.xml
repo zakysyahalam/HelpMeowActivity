@@ -22,7 +22,7 @@
             android:background="@color/light_orange"
             tools:ignore="MissingConstraints" />
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/photoImageView"
             android:layout_width="150dp"
             android:layout_height="150dp"

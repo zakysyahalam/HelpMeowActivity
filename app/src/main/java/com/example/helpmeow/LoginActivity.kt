@@ -12,6 +12,9 @@ import com.google.gson.Gson
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import android.content.SharedPreferences
+import android.preference.PreferenceManager
+
 
 class LoginActivity : Activity() {
 
@@ -19,6 +22,11 @@ class LoginActivity : Activity() {
     private lateinit var et_email: EditText
     private lateinit var et_password: EditText
     private lateinit var google_btn: Button
+
+    private var email: String? = null
+    private var username: String? = null
+
+    private lateinit var sharedPref: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,14 +68,17 @@ class LoginActivity : Activity() {
 
             override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
                 val user = response.body()
-                val email = user?.email
                 val yourId = user?.yourId
-                val username = user?.username
+
+                email = user?.email
+                username = user?.username
 
                 if (response.isSuccessful) {
-                    val message = response.body()?.message
-                    Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
-                    Toast.makeText(applicationContext, "your username: $username", Toast.LENGTH_SHORT).show()
+                    val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(applicationContext)
+                    val editor = sharedPreferences.edit()
+                    editor.putString("email", email)
+                    editor.putString("username", username)
+                    editor.apply()
 
                     val intent = Intent(this@LoginActivity, HomeActivity::class.java)
                     startActivity(intent)
@@ -87,4 +98,6 @@ class LoginActivity : Activity() {
             }
         })
     }
+
 }
+

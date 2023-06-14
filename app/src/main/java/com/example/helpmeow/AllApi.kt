@@ -20,10 +20,10 @@ interface RegisterApi {
     ): Call<RegisterResponse>
 }
 
-/*interface LogoutApi {
+interface LogoutApi {
     @GET("logout/{id}")
     fun logout(@Path("id") id: String): Call<LogoutResponse>
-}*/
+}
 
 interface CatApi {
     @GET("home")

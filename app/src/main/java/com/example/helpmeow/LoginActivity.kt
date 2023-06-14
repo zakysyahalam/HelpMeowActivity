@@ -78,6 +78,7 @@ class LoginActivity : Activity() {
                     val editor = sharedPreferences.edit()
                     editor.putString("email", email)
                     editor.putString("username", username)
+                    editor.putString("yourId", yourId)
                     editor.apply()
 
                     val intent = Intent(this@LoginActivity, HomeActivity::class.java)

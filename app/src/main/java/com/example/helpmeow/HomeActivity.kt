@@ -57,7 +57,6 @@ class HomeActivity : Activity() {
         retrofitData.enqueue(object : Callback<List<CatDataPostItem>?> {
             override fun onResponse(call: Call<List<CatDataPostItem>?>, response: Response<List<CatDataPostItem>?>
             ) {
-                Toast.makeText(applicationContext, "berhasil", Toast.LENGTH_SHORT).show()
                 val responseBody = response.body()!!
 
                 homeAdapter = HomeAdapter(baseContext,responseBody)
@@ -65,7 +64,6 @@ class HomeActivity : Activity() {
                 recyclerviewUsers.adapter = homeAdapter
 
 
-                Toast.makeText(applicationContext, "terbaca sampai akhir", Toast.LENGTH_SHORT).show()
             }
 
             override fun onFailure(call: Call<List<CatDataPostItem>?>, t: Throwable) {

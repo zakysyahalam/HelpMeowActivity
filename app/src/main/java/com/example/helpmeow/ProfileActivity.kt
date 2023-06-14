@@ -9,6 +9,7 @@ import android.content.SharedPreferences
 import android.preference.PreferenceManager
 import android.provider.MediaStore
 import android.widget.*
+import com.google.gson.Gson
 import de.hdodenhof.circleimageview.CircleImageView
 import retrofit2.Call
 import retrofit2.Callback
@@ -67,14 +68,21 @@ class ProfileActivity : AppCompatActivity() {
                         startActivity(intent)
                         finish()
                     } else {
-                        // Handle error in logout API response
-                        Toast.makeText(this@ProfileActivity, "Logout failed", Toast.LENGTH_SHORT).show()
+                        val errorBody = response.errorBody()?.string()
+                        val errorMessage = try {
+                            val errorJson = Gson().fromJson(errorBody, ErrorJson::class.java)
+                            errorJson.message ?: "Unknown error"
+                        } catch (e: Exception) {
+                            e.printStackTrace()
+                            errorBody ?: "Unknown error"
+                        }
+                        Toast.makeText(applicationContext, errorMessage, Toast.LENGTH_SHORT).show()
                     }
                 }
 
                 override fun onFailure(call: Call<LogoutResponse>, t: Throwable) {
                     // Handle failure in making the logout API call
-                    Toast.makeText(this@ProfileActivity, "Logout failed", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@ProfileActivity, "Logout Failure", Toast.LENGTH_SHORT).show()
                 }
             })
         } else {
@@ -85,7 +93,6 @@ class ProfileActivity : AppCompatActivity() {
     fun showProfile() {
         val email = sharedPref.getString("email", "")
         val username = sharedPref.getString("username", "")
-        val yourId = sharedPref.getString("yourId", "")
 
         nameTextView.text = username
         emailTextView.text = email

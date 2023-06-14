@@ -104,7 +104,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/imageView3"
+                        android:id="@+id/catPhoto"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:scaleType="centerCrop"
@@ -165,26 +165,25 @@
                 app:layout_constraintStart_toEndOf="@+id/catName"
                 app:layout_constraintTop_toTopOf="@+id/catName" />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardView4"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+
+            <TextView
+                android:id="@+id/catGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
                 android:layout_marginStart="10dp"
-                app:cardBackgroundColor="@color/coklat_muda"
-                app:cardCornerRadius="20dp"
+                android:background="@drawable/rounded_corner_background_tagpost"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:text="Female"
+                android:textColor="@color/hijau_tua"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/catLocation"
+                app:layout_constraintEnd_toStartOf="@+id/catRescued"
                 app:layout_constraintStart_toEndOf="@+id/catLocation"
-                app:layout_constraintTop_toTopOf="@+id/catLocation">
-
-                <ImageView
-                    android:id="@+id/catGender"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:src="@drawable/img_female" />
-
-            </androidx.cardview.widget.CardView>
-
+                app:layout_constraintTop_toTopOf="@+id/catLocation" />
 
             <TextView
                 android:id="@+id/catRescued"
@@ -198,9 +197,8 @@
                 android:text="Rescued"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                app:layout_constraintBottom_toBottomOf="@+id/cardView4"
-                app:layout_constraintEnd_toEndOf="@+id/cardView2"
-                app:layout_constraintTop_toTopOf="@+id/cardView4" />
+                app:layout_constraintBottom_toBottomOf="@+id/catGender"
+                app:layout_constraintEnd_toEndOf="@+id/cardView2" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView3"
@@ -215,7 +213,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/catName">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/catDescription"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="15dp"

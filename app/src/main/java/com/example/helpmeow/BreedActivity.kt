@@ -82,8 +82,8 @@ class BreedActivity: Activity() {
                 "Balinese",
                 "Kucing bali adalah salah satu ras kucing alami akibat mutasi genetik pada ras siam. Perbedaan antara ras bali dengan ras siam terletak pada ukuran bulunya saja, kucing bali berbulu sedang, sedangkan kucing siam berbulu pendek. Ras  ini adalah ras kucing oriental, yaitu memiliki tubuh yang panjang dan langsing. Pada sekitar tahun 1920-an, kucing bulu panjang siam dianggap sebagai kucing yang aneh, sehingga banyak yang menjualnya dengan harga yang murah. Tak ada satu pun usaha untuk melakukan program pembiakan terhadap ras kucing ini. Pada sekitar tahun 1950-an, barulah muncul usaha untuk mengembangbiakan ras ini agar dapat terpisah dengan ras siam menjadi ras tersendiri.",
                 "Rp 14 jt - Rp 20 jt",
-                "\"Jantan : 3 kg - 5 kg\n" +
-                        "Betina : 3 kg - 4 kg\""
+                "Jantan : 3 kg - 5 kg\n" +
+                        "Betina : 3 kg - 4 kg"
             )
         )
         breedList.add(
@@ -92,8 +92,8 @@ class BreedActivity: Activity() {
                 "Bengal",
                 "Kucing bengal adalah keturunan keempat dari hasil persilangan antara kucing american shorthair dengan kucing asian leopard. Kucing ini berasal dari California, Amerika Serikat. Meskipun tergolong kucing hutan, tetapi ras bengal termasuk hewan yang banyak digemari dan dijadikan hewan peliharaan. Kucing ini memiliki ukuran badan yang panjang dengan otot-otot pada tubuhnya yang kuat. Ia memiliki tulang yang besar dan tebal, serta bulu yang tebal, rapat dan halus. Dalam proses pemeliharaannya, kucing ini memerlukan perawatan khusus pada bulunya, yaitu dengan digosok secara lembut menggunakan sikat yang halus. Populasi kucing bengal belum begitu banyak sehingga harganya tergolong tinggi",
                 "Rp 5 jt - Rp 75 jt",
-                "\"Jantan : 4.5 kg - 6.9 kg\n" +
-                        "Betina : 3.6 kg - 5.5 kg\""
+                "Jantan : 4.5 kg - 6.9 kg\n" +
+                        "Betina : 3.6 kg - 5.5 kg"
             )
         )
         breedList.add(
@@ -111,8 +111,8 @@ class BreedActivity: Activity() {
                 "Bombay",
                 "Kucing bombay adalah salah satu ras kucing domestik yang merupakan hasil persilangan kucing bulu pendek amerika dengan kucing burma. Jenis kucing Bombay ini berukuran sedang, dengan lapisan rambut berwarna hitam pekat yang mengkilat, yang berkilau seperti kulit perlak. Bentuk kepalanya membulat, dengan telinga yang juga membulat dan moncong lebar yang tumpul. Mata berwarna keemasan atau coklat seperti perunggu yang indah memiliki jarak yang cukup dan membuatnya terlihat ekspresif. Badannya teguh dan berotot, dengan punggung yang lurus. Kulit hidung dan kelopak matanya hitam, dan telapak kakinya pun hitam atau coklat tua.",
                 "Rp 7 jt - Rp 28 jt",
-                "\"Jantan : > 5 kg\n" +
-                        "Betina : 3 kg - 5 kg\""
+                "Jantan : > 5 kg\n" +
+                        "Betina : 3 kg - 5 kg"
             )
         )
         breedList.add(
@@ -138,7 +138,7 @@ class BreedActivity: Activity() {
                 R.drawable.breed12,
                 "Burmilla",
                 "Burmilla adalah salah satu ras kucing yang terbentuk dari persilangan antara kucing burma dengan chinchilla. Kucing jenis ini berukuran sedang, serupa dengan kucing Burma. Struktur tulangnya kokoh, badannya berotot dan punggungnya lurus. Kucing berjenis kelamin betina jauh lebih kecil dan lebih menarik ketimbang kucing yang jantan. Jenis kepalanya agak membulat, dengan ujung yang cenderung lancip, dan telinganya lebar. Warna mata kucing ini kuning keemasan bahkan mungkin juga berwarna hijau. Lapisan rambut luarnya pendek dan mengikuti bentuk tubuh. Lapisan rambut luar yang cenderung pucat dengan ujung berwarna gelap di sekujur tubuhnya. Dahinya memiliki fitur yang dilihat sepintas mirip dengan bentuk huruf M.",
-                "Rp 7.000.000 - Rp 16.000.000",
+                "Rp 7 jt - Rp 16 jt",
                 "3 kg - 6 kg"
             )
         )
@@ -146,31 +146,27 @@ class BreedActivity: Activity() {
             BreedItem(
                 R.drawable.breed13,
                 "Chartreux",
-                "\"Kucing chartreux adalah kucing berbadan besar dan berotot dengan bulu yang pendek. Chartreux dikenal sebagai kucing dengan bulu pendek dua lapis yang berwarna biru. Bulunya ini tahan dengan air. Mata chartreux berbentuk oval dan berwarna tembaga. Chartreux wajahnya terlihat seperti tersenyum, karena chartreux memiliki struktur tengkorak dan rahang yang sedikit berbeda. Chartreux adalah kucing berbadan besar dan berotot dengan bulu yang pendek. Chartreux dikenal sebagai kucing dengan bulu pendek dua lapis yang berwarna biru. Bulunya ini tahan dengan air. Mata chartreux berbentuk oval dan berwarna tembaga.\n" +
-                        "\"",
+                "Kucing chartreux adalah kucing berbadan besar dan berotot dengan bulu yang pendek. Chartreux dikenal sebagai kucing dengan bulu pendek dua lapis yang berwarna biru. Bulunya ini tahan dengan air. Mata chartreux berbentuk oval dan berwarna tembaga. Chartreux wajahnya terlihat seperti tersenyum, karena chartreux memiliki struktur tengkorak dan rahang yang sedikit berbeda. Chartreux adalah kucing berbadan besar dan berotot dengan bulu yang pendek. Chartreux dikenal sebagai kucing dengan bulu pendek dua lapis yang berwarna biru. Bulunya ini tahan dengan air. Mata chartreux berbentuk oval dan berwarna tembaga.\n",
                 "Rp 7 jt - Rp 21 jt",
-                "\"Jantan : 4.5 kg - 7 kg\n" +
-                        "Betina : 2.7 kg - 5 kg\""
+                "Jantan : 4.5 kg - 7 kg\n" +
+                        "Betina : 2.7 kg - 5 kg"
             )
         )
         breedList.add(
             BreedItem(
                 R.drawable.breed14,
                 "Chausie",
-                "\"Kucing chausie adalah salah satu ras kucing hibrida yang berasal dari Amerika Serikat. Chausie merupakan hasil persilangan dari kucing hutan dengan kucing domestik yang memiliki bulu pendek, bertubuh sedang, panjang, dan langsing, dengan berat badan jantan sekitar 4.5-7.5 kg, dan betina 3.4–5 kg. Chausie adalah kucing yang handal dalam hal melompat dan berlari, dikarenakan tubuhnya yang panjang.\n" +
-                        "\"",
+                "Kucing chausie adalah salah satu ras kucing hibrida yang berasal dari Amerika Serikat. Chausie merupakan hasil persilangan dari kucing hutan dengan kucing domestik yang memiliki bulu pendek, bertubuh sedang, panjang, dan langsing, dengan berat badan jantan sekitar 4.5-7.5 kg, dan betina 3.4–5 kg. Chausie adalah kucing yang handal dalam hal melompat dan berlari, dikarenakan tubuhnya yang panjang.\n",
                 "Rp 14 jt - Rp 35 jt",
-                "\"Jantan : 5 kg - 8 kg\n" +
-                        "Betina : 4 kg - 6 kg\""
+                "Jantan : 5 kg - 8 kg\n" +
+                        "Betina : 4 kg - 6 kg"
             )
         )
         breedList.add(
             BreedItem(
                 R.drawable.breed15,
                 "Cornish Rex",
-                "\"Rex cornish adalah salah satu ras kucing domestik berbulu pendek, bahkan sangat pendek, dan keriting, yang terjadi akibat adanya mutasi genetik pada nenek moyang mereka, yaitu seekor anak kucing yang terlahir sekitar tahun 1950-an di sebuah area pertanian di Cornwall, Inggris. Maka dari itu kucing jenis ini diberi nama \"\"cornish\"\" yang merupakan serapan dari kata \"\"cornwall\"\". Kucing ini cenderung berotot dan memiliki bentuk yang ramping serta berkaki panjang. Mereka seolah lebih berat dari kelihatannya. Kucing ini memiliki kepala melancip, tengkorak yang rata, telinganya lebar yang tinggi. Bagian yang paling membedakan jenis ini adalah lapisan rambutnya yang ikal, namun lembut ketika disentuh. Lapisan ini tidak memiliki helai yang panjang, namun tetap terlihat bergelombang dan beriak. Kumisnya pun ikal, sebagaimana bagian lain dari lapisan rambut luarnya. Jenis kucing Cornish Rex memiliki aroma tersendiri, yang sering dideskripsikan oleh pemilikya, “seperti keju”. Warna maupun motifnya pun beragam.\n" +
-                        "\n" +
-                        "\"",
+                "Rex cornish adalah salah satu ras kucing domestik berbulu pendek, bahkan sangat pendek, dan keriting, yang terjadi akibat adanya mutasi genetik pada nenek moyang mereka, yaitu seekor anak kucing yang terlahir sekitar tahun 1950-an di sebuah area pertanian di Cornwall, Inggris. Maka dari itu kucing jenis ini diberi nama \"\"cornish\"\" yang merupakan serapan dari kata \"\"cornwall\"\". Kucing ini cenderung berotot dan memiliki bentuk yang ramping serta berkaki panjang. Mereka seolah lebih berat dari kelihatannya. Kucing ini memiliki kepala melancip, tengkorak yang rata, telinganya lebar yang tinggi. Bagian yang paling membedakan jenis ini adalah lapisan rambutnya yang ikal, namun lembut ketika disentuh. Lapisan ini tidak memiliki helai yang panjang, namun tetap terlihat bergelombang dan beriak. Kumisnya pun ikal, sebagaimana bagian lain dari lapisan rambut luarnya. Jenis kucing Cornish Rex memiliki aroma tersendiri, yang sering dideskripsikan oleh pemilikya, “seperti keju”. Warna maupun motifnya pun beragam.\n",
                 "Rp 11 jt - Rp 18 jt",
                 "2.5 kg - 5 kg"
             )
@@ -253,8 +249,8 @@ class BreedActivity: Activity() {
                 "Japanese Bobtail",
                 "Kucing ekor bundel jepang memiliki bentuk elegan dan otot-otot yang terdefinisi dengan jelas. Kepalanya seolah dipahat dengan baik, telinga besar menghadap ke atas, mata besar membulat namun dengan sudut yang miring. Ekornya ketika normal hanya mencapai panjang 5-8 cm. Ketika kucing ini sedang dalam kondisi rileks, ekornya menghadap ke atas. Rambut pada ekornya lebih tebal dan panjang dibanding bagian lain tubuh, dan tumbuh memanjang ke segala arah mengakibatkan bentuknya terlihat seperti pompom atau ekor kelinci. Kucing ekor bundel dapat berambut panjang maupun pendek. Rambutnya lembut dan halus dengan berbagai macam warna. Orang-orang di Jepang lebih menyukai kucing ekor bundel dengan kombinasi tiga warna, yakni campuran tortie dan putih (dikenal dengan istilah Mi-ke), yang melambangkan keberuntungan. Campuran warna ini biasanya ditemukan hanya di betina. Kucing ini ramah dan cerdas. Ras ini dikatakan memiliki sifat manis dan bergaul dengan sebagian besar hewan lain dan suka berteman dengan manusia. Beberapa dapat mempelajari trik dan perlu tetap terhibur dan terstimulasi. Ini adalah jenis yang cukup banyak bicara. Ciri khas kucing ekor bundel jepang adalah ekornya. Saat kucing dalam keadaan santai dan alami, ekornya terlihat seperti kelinci, tetapi dapat dibentangkan hingga panjangnya sekitar 10 hingga 12 cm. Di Jepang, Ras ini dapat ditelusuri kembali ke abad ke-8 tetapi tidak terlihat di luar Jepang sampai tahun 1960-an ketika kucing ekor bundel jepang diimpor ke Amerika. Kucing ini telah memiliki pengikut di Amerika dan sekarang menjadi ras yang diakui dan ditampilkan secara luas di AS. Tidak banyak di Inggris.",
                 "Rp 7 jt - Rp 10 jt",
-                "\"Jantan : 4 kg - 6 kg\n" +
-                        "Betina : 3.5 kg - 5 kg\""
+                "Jantan : 4 kg - 6 kg\n" +
+                        "Betina : 3.5 kg - 5 kg"
             )
         )
         breedList.add(
@@ -281,8 +277,8 @@ class BreedActivity: Activity() {
                 "Maine Coon",
                 "Kucing Maine Coon berasal dari Amerika dengan nenek moyang yang berasal dari kucing berambut panjang yang dikawinkan dengan kucing shorthair hal tersebut menjadikannya populer pada pertunjukan yang sering digelar pada 1860-an. Kucing Maine Coon merupakan jenis kucing besar yang memiliki tubuh berotot dan kaki yang kuat. Dengan moncong berbentuk kotak, telinga lebar, dan tinggi serta bulu panjang dan tebal, terdiri dari lapisan dalam yang lembut dan lapisan luar yang mengkilap serta tahan air. Rambut di bagian kepala, leher, dan bahu lebih pendek, sedangkan rambut di bagian punggung, pinggiran, dan ekor lebih panjang. Bulu di perut dan bagian bawahnya sangat penuh dan terlihat acak-acakan. Ada pula rambut yang tumbuh di sekitar leher, dimulai dari bawah telinga, dan lebih panjang pada jantan daripada betina. Bulu di ekor kucing ini panjang dan lebat. Ujung telinganya memiliki bentuk lancip, dan cakarnya memiliki rumbai seperti sepatu salju. Maine Coon memiliki lebih dari 30 variasi warna yang berbeda. Warna mata kucing ini bervariasi mulai dari hijau, emas, atau cokelat seperti perunggu. Ada hal yang penting diketahui sebelum kalian mengadopsi kucing ini, yaitu terkait prevalensi tinggi terhadap kondisi jantung(kardiomiopati hipertrofik) bahkan memiliki prevalensi tinggi displasia pinggul, oleh sebab itu konsultasikan dengan pembiak sebelum anda meminangnya.",
                 "Rp 8 jt - Rp 30 jt",
-                "\"Jantan : 5 kg - 9 kg\n" +
-                        "Betina : 3 kg - 5 kg\""
+                "Jantan : 5 kg - 9 kg\n" +
+                        "Betina : 3 kg - 5 kg"
             )
         )
         breedList.add(
@@ -300,8 +296,8 @@ class BreedActivity: Activity() {
                 "Munchkin",
                 "Kucing Munchkin berasal dari Amerika pada tahun 1983 yang akrab disebut The Wizard of Oz. Kucing ini memiliki tampilan yang manis dan ramah serta ukuran tubuh yang sedang dengan kaki yang sangat pendek namun tulang belakang yang panjang membuat tampilannya sangat digemari setiap orang. Bulu kucing ini bisa bertipe panjang maupun pendek dengan lapisan rambut yang tebal dan mewah sanggup menghadapi berbagai jenis cuaca. Kaki pendek yang dimiliki kucing ini merupakan kelainan bentuk yang berkaitan dengan masalah tulang belakang.",
                 "Rp 7 jt - Rp 20 jt",
-                "\"Jantan : 3 kg - 4 kg\n" +
-                        "Betina : 2 kg - 3.6 kg\""
+                "Jantan : 3 kg - 4 kg\n" +
+                        "Betina : 2 kg - 3.6 kg"
             )
         )
         breedList.add(
@@ -310,8 +306,8 @@ class BreedActivity: Activity() {
                 "Nebelung",
                 "Kucing Nebelung merupakan kucing yang sangat cantik namun kekar. Memiliki kemiripan dengan Kucing Russian Blue yang memiliki tubuh tegap, lentur, dan berotot, serta kepala yang rapi. Hal yang membedakan hanya pada bulu Nebelung yang agak panjang dan telinga berumbai. Kucing ini umumnya mampu hidup 15-18 tahun dengan berat 3.5-6.5 kg dan warna mata abu-abu pekat. Dengan kepribadiannya yang pemalu dan menyendiri terhadap orang asing. Serta sensitif terhadap kebisingan dan hiruk pikuk namun kucing ini sangat menyukai kebersamaan dengan manusia dan bergaul baik dengan anjing serta anak-anak. ",
                 "Rp 4 jt - Rp 14 jt",
-                "\"Jantan : 5 kg - 6.5 kg\n" +
-                        "Betina : 3.5 kg - 5 kg\""
+                "Jantan : 5 kg - 6.5 kg\n" +
+                        "Betina : 3.5 kg - 5 kg"
             )
         )
         breedList.add(
@@ -320,8 +316,8 @@ class BreedActivity: Activity() {
                 "Norwegian Forest ",
                 "Kucing Norwegian Forest berasal dari kucing shorthair yang dibawa bangsa viking dari Inggirs Raya dan longhair yang dibawa oleh Tentara salib ke skandinavia yang dikawinkan dengan kucing lokal. Ras ini ditemukan sekitar 1930 di Skandinavia tepatnya di Norwegia. Kucing Norwegian Forest memiliki karakteristik badan panjang, berotot dan kuat serta struktur tulang yang kokoh. Kucing ini memiliki kaki panjang dan ekor lebat. Kucing ini memiliki kepala panjang dan berbentuk segitiga dengan profil lurus, telinga tinggi dengan ujung lancip. Rambutnya mengkilap dan tahan air, menutupinya seperti wol mulai dari leher, depan, hingga rumbai antar jari kaki. Kucing ras ini memiliki kemampuan adaptasi yang baik yang membuatnya sangat baik untuk berkeliaran dan berburu di luar. Kucing ini memiliki catatan kesehatan yang baik tanpa ada warisan penyakit yang krusial.",
                 "Rp 11 jt - Rp 21 jt",
-                "\"Jantan : 4.5 kg - 9 kg\n" +
-                        "Betina : 3.5 kg - 8 kg\""
+                "Jantan : 4.5 kg - 9 kg\n" +
+                        "Betina : 3.5 kg - 8 kg"
             )
         )
 
@@ -332,8 +328,8 @@ class BreedActivity: Activity() {
                 "Ocicat",
                 "Kucing Osicat berasal dari Amerika dari perkawinan eksperimental tahun 1960-an di Amerika. Kucing Osicat merupakan kucing yang berukuran sedang hingga besar dengan motif rambut jelas,  Dadanya dalam dan lebar dengan kaki yang kuat dan berotot. Kepalanya lancip, dengan rahang yang cenderung kotak. Telinganya besar dan lebar namun melancip, membuat kucing ini terlihat liar. Rambut Osicat pendek dan licin dengan tekstur seperti kain satin. Motif totolnya tersebar di bagian pinggir, bahu dan belakang, memanjang ke kaki hingga perut. Dahinya dengan jelas terlihat membentuk huruf M. Ekornya menunjukkan motif totol-totol dan lingkaran warna gelap, dan ujungnya berwarna lebih gelap. Kucing ras ini tidak memiliki kelainan yang krusial sampai saat ini.",
                 "Rp 12jt - Rp 18 jt",
-                "\"Jantan: 4.5 - 5.4 kg\n" +
-                        "Betina: 3.1 - 5.4 kg\""
+                "Jantan: 4.5 - 5.4 kg\n" +
+                        "Betina: 3.1 - 5.4 kg"
             )
         )
         breedList.add(
@@ -342,8 +338,8 @@ class BreedActivity: Activity() {
                 "Oriental Long Hair",
                 "Kucing Oriental Rambut Panjang berasal dari Inggris dengan asal usul awal dari Turki pada abad ke-19 dibawa ke Eropa Barat. Kucing ras ini tercipta kembali oleh persilangan kucing Abyssinian gen rambut panjang dengan kucing Siam. Adapun karakteristik kucing ini yaitu memiliki tubuh yang panjang, lentur dan elegan, persis seperti tubuh kucing Siam dengan kepala dan telinga berbentuk segitiga yang lancip. rambutnya panjang dan seperti sutra namun berbeda dengan kucing Persia, rambut bagian dalam yang seperti wol dan rambut luarnya cenderung jatuh mengikuti bentuk tubuh sehingga kerap digolongkan sebagai semi-longhair. Ekornya membentuk jambul yang indah. Rentang kemungkinan warna rambutnya dimulai dari seluruh warna solid hingga motif asap dengan berbagai karakter. Semua Oriental Longhair memiliki mata hijau dengan bentuk seperti almond, kecuali jenis putih, yang bisa juga bermata biru, atau bahkan dua mata dengan warna berbeda satu sama lain. ",
                 "Rp 11 jt - Rp 22 jt",
-                "\"Jantan: 3.6 - 5.4 kg \n" +
-                        "Betina: 2.7 - 3.6 kg \""
+                "Jantan: 3.6 - 5.4 kg \n" +
+                        "Betina: 2.7 - 3.6 kg "
             )
         )
         breedList.add(
@@ -360,7 +356,7 @@ class BreedActivity: Activity() {
                 R.drawable.breed35,
                 "Persian",
                 "Persian Longhair berasal dari Persia dan Turki. Kucing ras ini berukuran sedang dengan ukuran kepala yang besar bila dibandingkan dengan ukuran tubuhnya. Kepalanya bulat dan lebar, dengan telinga yang kecil dan wajah yang terbuka. Kakinya pendek, tebal dan kuat dengan cakaran besar namun berujung lancip. Ekornya pendek dan rambutnya lebat. Rambut luarnya panjang, tebal dan terlihat mewah dengan rambut bagian dalam yang lebat. Tercatat bahwa kucing ras ini diperkirakan hidup sekitar 10-12 tahun namun memiliki sejumlah potensi masalah kesehatan yang disebabkan oleh bentuk rahang yang mampu menyebabkan penyakit gigi, dan masalah makan dan minum. Lubang hidung yang kecil dan langit-langit lunak terlalu panjang mengakibatkan masalah pernapasan yang parah. Serta saluran air mata yang tidak sesuai mengakibatkan wajah iritasi oleh karena air mata yang mengalir terus menerus. Kucing Persia juga dikenal memiliki gen pembawa gagal ginjal melalui perkembangan kista di ginjal.",
-                "Rp 300.000 - Rp 10 jt",
+                "Rp 300 k - Rp 10 jt",
                 "3 kg - 7 kg"
             )
         )
@@ -370,8 +366,8 @@ class BreedActivity: Activity() {
                 "Pixiebob",
                 "Pixiebob merupakan kucing besar dengan tubuh yang kekar dan kuat. Menyerupai kucing hutan Amerika Utara dalam bentuk mini, Pixiebob memiliki tubuh berotot, wajah berbentuk buah pir dengan telinga berumbai, dan bulu berbulu yang menonjol dari tubuhnya. Pixiebob umumnya memiliki ekor yang pendek, bahkan tidak memiliki ekor, namun hal ini bervariasi pada setiap kucing dan mereka dapat memiliki ekor dengan panjang berapapun. Pixiebob biasanya berbulu pendek, namun ada juga anak kucing yang berbulu panjang, mereka juga merupakan salah satu dari sedikit ras yang memperbolehkan polydactyl (jari kaki ekstra) dalam standar ras - maksimal tujuh jari kaki diperbolehkan pada setiap kaki. Kucin ini mampu hidup 13-15 tahun dengan berat 3.6-7.7 kg",
                 "Rp 8 jt - Rp 21 jt",
-                "\"Jantan : 5 kg - 11 kg\n" +
-                        "Betina : 4 kg - 6 kg\""
+                "Jantan : 5 kg - 11 kg\n" +
+                        "Betina : 4 kg - 6 kg"
             )
         )
         breedList.add(
@@ -398,8 +394,8 @@ class BreedActivity: Activity() {
                 "Russian Blue",
                 "Russian Blue adalah kucing berukuran sedang yang menarik dengan tubuh yang agak 'asing' ('asing' dalam istilah kucing berarti 'seperti kucing Siam'), panjang dan luwes serta sangat berotot, namun tetap anggun. Kepalanya berbentuk baji, tetapi tulang pipi yang lebar membuat Russian Blue memiliki wajah yang terbuka dan tersenyum, dibingkai dengan telinga yang besar dan melebar. Kaki dan panjang dan ramping dengan cakar yang rapi, kecil, dan berbentuk oval. Russian Blue terkenal dengan bulunya yang lebat, tebal dan mewah. Kucing ras ini memiliki umur sekitar 10 sampai 15 tahun dengan berat 3 sampai 7 kilogram. Russian Blue adalah teman yang menarik dan elegan oleh karena kepribadiannya yang menyendiri. Hal tersebut menyebabkan kucing ini lebih sering mengamati dari kejauhan dan mengevaluasi kelayakan manusia baru mau berteman. ",
                 "Rp 20 jt - Rp 33 jt",
-                "\"Jantan : 4.5 kg - 5.5 kg\n" +
-                        "Betina : 3 kg - 5 kg\""
+                "Jantan : 4.5 kg - 5.5 kg\n" +
+                        "Betina : 3 kg - 5 kg"
             )
         )
         breedList.add(
@@ -435,8 +431,8 @@ class BreedActivity: Activity() {
                 "Siberian",
                 "Kucing Siberia berasal dari Rusia dan dikateogirkan sebagai kucing nasional Rusia. Kucing ini termasuk ras kucing besar yang berotot serta dengan bentuk batang tubuh layaknya tong. Rambutnya panjang dan padat, kepala berbentuk seperti segitiga dengan kontur bulat, serta matanya sangat ekspresif. Penampilan fisik mereka secara keselurahan menunjukkan kekuatan. Rambut yang lebih panjang pada triple coat berwarna pucat di dekat kulit dan menggelap di ujung luar. Kondisi ini menjadikan rambut mereka berkilau saat bergerak. Walaupun garis hitam dan rambut coklat merupakan varian yang paling umum. Kucing Siberia dikenal sebagai kucing dengan jangka hidup 11 hingga 15 tahun dengan kepribadian yang setia, mudah bergaul dan percaya diri, hingga keanehan yaitu gemar memainkan air, seperti di mangkuk, maupun air menetes seperti dari wastafel. Dari catatan kesehatannya kucing ras ini berisiko mengalami penyakit jantung bernama hypertrophic cardiomyopathy.",
                 "Rp 16 jt - Rp 56 jt",
-                "\"Jantan : 6 kg - 9 kg\n" +
-                        "Betina : 4 kg - 7 kg\""
+                "Jantan : 6 kg - 9 kg\n" +
+                        "Betina : 4 kg - 7 kg"
             )
         )
         breedList.add(
@@ -445,8 +441,8 @@ class BreedActivity: Activity() {
                 "Singapura",
                 "Sesuai dengan namanya kucing ras ini berasal dari Singapura dikenal sebagai kucing saluran pembuangan karena gaya hidupnya liar di got maupun saluran pembuangan. Pada tahun 1974, kucing ini dianggap sebagai hama karna populasinya sehingga dilakukan pemusnahan yang menyisakan 3 kucing yang kemudian dibawa ke Amerika untuk dikembangkan kembali sehingga popularitasnya meningkat. Dari segi tampilan kucing ras ini mirip dengan kucing Abyssinian. Kepalanya berbentuk bulat dengan kumis yang tertata rapi dan moncong pendek yang lebar. Telinganya besar dan berbentuk cekung yang dalam. Mata mereka besar dan berbentuk layaknya kacang almond yang sedikit miring  dan terbuka lebar. Meskipun kucing ini tergolong kecil, tubuhnya termasuk kekar dan berotot. Kemudian, ekornya terlihat ramping dan memiliki ujung yang tumpul. Kucing Singapura memiliki rambut pendek dan halus yang hadir dalam warna garis-garis hitam, cokelat, atau krim. Namun, seluruh jenis kucing memiliki warna rambut lebih gelap pada bagian punggung, buntut, dan juga kaki-kakinya. Kemudian, perut dan dadanya secara kompak memiliki warna krim, apa pun warna utama kucing tersebut. Akan tetapi, warna mata bisa saja berbeda-beda, ada yang cokelat hazel, hijau, dan kuning, semuanya dengan garis luar berwarna hitam.",
                 "Rp 18,5 jt - Rp 47 jt",
-                "\"Jantan : 2.7 kg - 3.5 kg\n" +
-                        "Betina : 1.8 kg - 2.5 kg\""
+                "Jantan : 2.7 kg - 3.5 kg\n" +
+                        "Betina : 1.8 kg - 2.5 kg"
             )
         )
         breedList.add(
@@ -500,8 +496,8 @@ class BreedActivity: Activity() {
                 "Turkish Van",
                 "Kucing Turkish Van adalah kucing besar, berotot, namun elegan dengan tubuh putih bersih dan kepala dengan ekor berwarna khas yang berasal dari Turki. Memiliki kesan anggun namun kuat, dengan telinga yang tinggi dan mata yang besar, oval, dan ekspresif. Turkish Van memiliki bulu semi-panjang yang lembut dan halus, bukan berbulu atau berbulu halus. Cakarnya berumbai, dan ekornya harus berupa bulu yang lebat. Mereka mungkin memiliki dua mata kuning, dua mata biru atau salah satu dari keduanya.",
                 "Rp 11 jt - Rp 22 jt",
-                "\"Jantan : 5 kg - 7 kg\n" +
-                        "Betina : 5 kg - 6 kg\""
+                "Jantan : 5 kg - 7 kg\n" +
+                        "Betina : 5 kg - 6 kg"
             )
         )
 

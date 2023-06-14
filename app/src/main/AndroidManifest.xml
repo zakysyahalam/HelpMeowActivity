@@ -61,7 +61,7 @@
 
 		<activity
 			android:name=".BreedActivity"
-			android:exported="true" />
+			android:exported="true"/>
 		<activity
 			android:name=".FavoriteActivity"
 			android:exported="true" />
@@ -70,7 +70,7 @@
 			android:exported="true" />
 		<activity
 			android:name=".BreedInfoActivity"
-			android:exported="true" />
+			android:exported="true"/>
 
 
 	</application>

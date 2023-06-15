@@ -41,8 +41,33 @@ class ProfileActivity : AppCompatActivity() {
         findViewById<ImageButton>(R.id.navigation_profile).setOnClickListener(bottomButtons)
         findViewById<ImageButton>(R.id.navigation_post).setOnClickListener(bottomButtons)
 
+
+        val galleryButton2 = findViewById<ImageView>(R.id.photoImageView)
+        galleryButton2.setOnClickListener {
+            openGallery2()
+        }
+
         showProfile()
         logoutAction()
+    }
+
+    private fun openGallery2() {
+        val intent = Intent(Intent.ACTION_GET_CONTENT)
+        intent.type = "image/*"
+        startActivityForResult(intent, GALLERY_REQUEST_CODE)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == GALLERY_REQUEST_CODE && resultCode == RESULT_OK) {
+            val selectedImageUri = data?.data
+            val imageView = findViewById<ImageView>(R.id.photoImageView)
+            imageView.setImageURI(selectedImageUri)
+        }
+    }
+
+    companion object {
+        private const val GALLERY_REQUEST_CODE = 1
     }
 
     fun logoutAction(){

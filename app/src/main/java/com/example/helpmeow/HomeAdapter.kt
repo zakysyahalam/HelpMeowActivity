@@ -8,40 +8,48 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class HomeAdapter (val context: Context, val userlist: List<CatDataPostItem>): RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
+class HomeAdapter(val context: Context, val userlist: List<CatDataPostItem>) : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
 
-    class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        var catName: TextView
-        var catBreed: TextView
-        var catDescription: TextView
-        var catGender: TextView
-        var catUploader: TextView
-        var catLocation: TextView
-        var catPhoto: ImageView
-        var catRole: TextView
-        var catAction: ImageView
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val catName: TextView = itemView.findViewById(R.id.catName)
+        private val catBreed: TextView = itemView.findViewById(R.id.catBreed)
+        private val catDescription: TextView = itemView.findViewById(R.id.catDescription)
+        private val catGender: TextView = itemView.findViewById(R.id.catGender)
+        private val catUploader: TextView = itemView.findViewById(R.id.userName)
+        private val catLocation: TextView = itemView.findViewById(R.id.catLocation)
+        private val catPhoto: ImageView = itemView.findViewById(R.id.catPhoto)
+        private val catRole: TextView = itemView.findViewById(R.id.userRole)
+        private val catAction: ImageView = itemView.findViewById(R.id.catAction)
+        private val catAction2: ImageView = itemView.findViewById(R.id.catAction2)
+        private val catRescued: TextView = itemView.findViewById(R.id.catRescued)
 
+        fun bind(catData: CatDataPostItem) {
+            catName.text = catData.name
+            catBreed.text = catData.breed
+            catDescription.text = catData.description
+            catGender.text = catData.gender
+            catUploader.text = catData.upload_by_username
+            catLocation.text = catData.location
+            Glide.with(itemView).load(catData.photo).into(catPhoto)
+            catRole.text = catData.role
+            catRescued.text = catData.status
 
-        init {
-            catName = itemView.findViewById(R.id.catName)
-            catBreed = itemView.findViewById(R.id.catBreed)
-            catDescription = itemView.findViewById(R.id.catDescription)
-            catGender = itemView.findViewById(R.id.catGender)
-            catUploader = itemView.findViewById(R.id.userName)
-            catLocation = itemView.findViewById(R.id.catLocation)
-            catPhoto = itemView.findViewById(R.id.catPhoto)
-            catRole = itemView.findViewById(R.id.userRole)
-            catAction = itemView.findViewById(R.id.catAction)
-
+            val emailAddress = catData.upload_by_email ?: ""
+            catAction.setOnClickListener {
+                openGmail(emailAddress)
+            }
+            catAction2.setOnClickListener {
+                Toast.makeText(itemView.context, "added to favorite", Toast.LENGTH_SHORT).show()
+            }
         }
 
-        fun openGmail() {
-            val emailAddress = "recipient@example.com" // Replace with the recipient's email address
-            val subject = "HelpMeow Adoption Request" // Replace with the desired subject
-            val message = "-This is a message from HelpMeow app-" // Replace with the desired message content
+        private fun openGmail(emailAddress: String) {
+            val subject = "HelpMeow Adoption Request"
+            val message = "-This is a message from HelpMeow app-"
 
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse("mailto:$emailAddress?subject=${Uri.encode(subject)}&body=${Uri.encode(message)}")
@@ -61,17 +69,6 @@ class HomeAdapter (val context: Context, val userlist: List<CatDataPostItem>): R
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val catData = userlist[position]
-        holder.catName.text = catData.name
-        holder.catBreed.text = catData.breed
-        holder.catDescription.text = catData.description
-        holder.catGender.text = catData.gender
-        holder.catUploader.text = catData.upload_by_username
-        holder.catLocation.text = catData.location
-        Glide.with(context).load(catData.photo).into(holder.catPhoto)
-        holder.catRole.text = catData.role
-
-        holder.catAction.setOnClickListener {
-            holder.openGmail()
-        }
+        holder.bind(catData)
     }
 }

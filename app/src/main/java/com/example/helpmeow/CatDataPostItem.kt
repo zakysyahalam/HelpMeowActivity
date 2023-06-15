@@ -13,5 +13,7 @@ data class CatDataPostItem(
     val name: String,
     val photo: String,
     val role: String,
-    val upload_by_username: String
+    val status: String,
+    val upload_by_username: String,
+    val upload_by_email: String
 )

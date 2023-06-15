@@ -81,7 +81,7 @@ class LoginActivity : Activity() {
                     editor.putString("yourId", yourId)
                     editor.apply()
 
-                    val intent = Intent(this@LoginActivity, HomeActivity::class.java)
+                    val intent = Intent(this@LoginActivity, ProfileActivity::class.java)
                     startActivity(intent)
                     finish()
 
